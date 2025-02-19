@@ -1,19 +1,75 @@
 body {  
-    font-family: Arial, sans-serif;  
+    font-family: "Arial", sans-serif;  
     margin: 0;  
     padding: 0;  
-    background-color: #f9f9f9;  
-}  
+    background-color: #f2f2f2;  
+    color: #333;  
+    line-height: 1.6;  
+}
 
 header {  
     background-color: #007bff;  
     color: white;  
-    padding: 20px;  
+    padding: 40px 20px;  
     text-align: center;  
 }  
 
-main {  
+header h1 {  
+    margin: 0;  
+    font-size: 2.5em;  
+}  
+
+header p {  
+    margin: 10px 0 0;  
+}  
+
+.hero-card {  
+    background: white;  
     padding: 20px;  
+    border-radius: 8px;  
+    margin: 20px auto;  
+    max-width: 600px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+}  
+
+.hero-card h2 {  
+    font-size: 1.8em;  
+    margin-bottom: 10px;  
+}  
+
+.hero-card p {  
+    margin-bottom: 15px;  
+}  
+
+.hero-card .btn {  
+    display: inline-block;  
+    background-color: #007bff;  
+    color: white;  
+    padding: 10px 20px;  
+    text-decoration: none;  
+    border-radius: 5px;  
+}  
+
+.hero-card .btn:hover {  
+    background-color: #0056b3;  
+}  
+
+.features {  
+    max-width: 800px;  
+    margin: 20px auto;  
+    padding: 20px;  
+}  
+
+.features h2 {  
+    font-size: 1.8em;  
+    margin-bottom: 10px;  
+    text-align: center;  
+}  
+
+.features ul {  
+    list-style-type: disc;  
+    margin-left: 20px;  
 }  
 
 footer {  
@@ -21,7 +77,14 @@ footer {
     padding: 10px;  
     background-color: #007bff;  
     color: white;  
-    position: fixed;  
-    width: 100%;  
-    bottom: 0;  
+    position: relative;  
+}  
+
+footer .footer-link {  
+    color: white;  
+    text-decoration: none;  
+}  
+
+footer .footer-link:hover {  
+    text-decoration: underline;  
 }
