@@ -1,39 +1,104 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Fish Weight Estimator App</title>  
-    <meta name="description" content="Estimate the weight of your fish with our easy-to-use app!">  
-    <link rel="stylesheet" href="styles.css">  
-</head>  
-<body>  
-    <header>  
-        <h1>Fish Weight Estimator App</h1>  
-        <p>Your ultimate tool to estimate fish weight accurately and easily.</p>  
-    </header>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Weight Estimator App</title>
+    <meta name="description" content="Estimate the weight of your fish with our easy-to-use app!">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Fish Weight Estimator</a>
+            <div class="space-x-4">
+                <a href="formulas.html" class="hover:text-blue-200">Weight Formulas</a>
+                <a href="privacy-policy.html" class="hover:text-blue-200">Privacy Policy</a>
+            </div>
+        </div>
+    </nav>
 
-    <main>  
-        <section class="hero-card">  
-            <h2>Why Use This App?</h2>  
-            <p>Estimate the weight of your fish by simply typing its length, girth, and type.</p>  
-            <p>Quick, easy to use, and optimized for most fish species!</p>  
-            <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn">Download the App Now</a>  
-        </section>  
+    <header class="bg-blue-700 text-white py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Fish Weight Estimator App</h1>
+            <p class="text-xl text-blue-100">Your ultimate tool to estimate fish weight accurately and easily.</p>
+        </div>
+    </header>
 
-        <section class="features">  
-            <h2>Features:</h2>  
-            <ul>  
-                <li>User-friendly input method for fish dimensions.</li>  
-                <li>Accurate weight estimation for multiple fish species.</li>  
-                <li>No account required – just download and use instantly!</li>  
-            </ul>  
-        </section>  
-    </main>  
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8 max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4 text-blue-800">Why Use This App?</h2>
+            <p class="mb-4 text-gray-700">Estimate the weight of your fish by simply typing its length, girth, and type.</p>
+            <p class="mb-6 text-gray-700">Quick, easy to use, and optimized for most fish species!</p>
+            <a href="https://apps.apple.com/app/idYOUR_APP_ID" 
+               class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                Download on the App Store
+            </a>
+        </section>
 
-    <footer>  
-        <p>&copy; 2025 Fish Weight Estimator App. All Rights Reserved.</p>  
-        <a href="privacy.html" class="footer-link">Privacy Policy</a>
-    </footer>  
-</body>  
+        <section class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold mb-4 text-blue-800">Key Features</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        User-friendly input method
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Multiple fish species support
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Instant weight calculations
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold mb-4 text-blue-800">How It Works</h2>
+                <ol class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">1</span>
+                        Measure your fish's length
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">2</span>
+                        Measure the girth (circumference)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">3</span>
+                        Select fish species and get instant results!
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="mt-8 text-center">
+            <a href="formulas.html" 
+               class="inline-block bg-blue-100 text-blue-800 px-6 py-3 rounded-lg hover:bg-blue-200 transition duration-300">
+                View Weight Calculation Formulas →
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <p class="mb-2">&copy; 2025 Fish Weight Estimator App. All Rights Reserved.</p>
+                <div class="space-x-4">
+                    <a href="formulas.html" class="text-blue-200 hover:text-white">Weight Formulas</a>
+                    <span class="text-blue-500">|</span>
+                    <a href="privacy.html" class="text-blue-200 hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
