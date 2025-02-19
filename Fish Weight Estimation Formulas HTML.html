@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Weight Estimation Formulas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fish Weight Estimation Formulas</h1>
+    <p>This document provides research-backed formulas to estimate the weight of various fish species using their length and girth. These formulas are widely used in fisheries science and angling communities.</p>
+
+    <h2>General Formula</h2>
+    <p><strong>Weight (W) = (Girth² × Length) / Factor</strong></p>
+    <ul>
+        <li><strong>Girth</strong>: The circumference of the fish at its widest point (in inches or cm).</li>
+        <li><strong>Length</strong>: The total length of the fish (in inches or cm).</li>
+        <li><strong>Factor</strong>: A species-specific constant derived from research or empirical data.</li>
+    </ul>
+
+    <h2>Species-Specific Formulas</h2>
+    <ul>
+        <li><strong>Salmon</strong>: Weight (lbs) = (Girth² × Length) / 800</li>
+        <li><strong>Redfish</strong>: Weight (lbs) = (Length × Girth²) / 900</li>
+        <li><strong>Snook</strong>: Weight (lbs) = (Length × Girth²) / 900</li>
+        <li><strong>Bluefish</strong>: Weight (lbs) = (Length × Girth²) / 1200</li>
+        <li><strong>Bonefish</strong>: Weight (lbs) = (Length × Girth²) / 1100</li>
+        <li><strong>Mackerel</strong>: Weight (lbs) = (Length × Girth²) / 1300</li>
+        <li><strong>Trout</strong>: Weight (lbs) = (Girth² × Length) / 800</li>
+        <li><strong>Bass</strong>: Weight (lbs) = (Length × Girth²) / 1200</li>
+        <li><strong>Walleye</strong>: Weight (lbs) = (Length × Girth²) / 900</li>
+        <li><strong>Pike</strong>: Weight (lbs) = (Length × Girth²) / 800</li>
+        <li><strong>Sunfish</strong>: Weight (lbs) = (Length × Girth²) / 1200</li>
+        <li><strong>Gar</strong>: Weight (lbs) = (Length × Girth²) / 1050</li>
+    </ul>
+
+    <h2>References</h2>
+    <ul>
+        <li><a href="https://publications.gc.ca/site/eng/9.856774/publication.html" target="_blank">Ricker, W. E. (1975): Computation and Interpretation of Biological Statistics of Fish Populations</a></li>
+        <li><a href="https://www.bonefishtarpontrust.org/" target="_blank">Bonefish & Tarpon Trust (BTT)</a></li>
+        <li><a href="https://tpwd.texas.gov/" target="_blank">Texas Parks and Wildlife Department (TPWD)</a></li>
+        <li><a href="https://myfwc.com/" target="_blank">Florida Fish and Wildlife Conservation Commission (FWC)</a></li>
+        <li><a href="https://www.dnr.state.mn.us/" target="_blank">Minnesota Department of Natural Resources (DNR)</a></li>
+        <li><a href="https://dnr.wisconsin.gov/" target="_blank">Wisconsin Department of Natural Resources (DNR)</a></li>
+    </ul>
+
+    <h2>Notes</h2>
+    <ul>
+        <li>Ensure that <strong>length</strong> and <strong>girth</strong> are in the same units (e.g., inches or cm).</li>
+        <li>These formulas assume average fish condition. Fish that are unusually fat or thin may deviate from these estimates.</li>
+        <li>For precise weight measurements, use species-specific length-weight regression equations derived from large datasets.</li>
+    </ul>
+<script>window.parent.postMessage({ action: "ready" }, "*"); 
+ 
+window.console = new Proxy(console, {
+  get(target, prop) {
+    if (['log', 'warn', 'error'].includes(prop)) {
+      return new Proxy(target[prop], {
+        apply(fn, thisArg, args) {
+          fn.apply(thisArg, args);
+          window.parent.postMessage({ action: 'console', 
+            type: prop, 
+            args: args.map((arg) => {
+              try {
+                return JSON.stringify(arg).replace(/^["']|["']$/g, '');
+              } catch (e) {
+                return arg;
+              }
+            }) 
+          }, '*');
+        }
+      });
+    }
+    return target[prop];
+  }
+});
+</script></body>
+</html>
