@@ -3,101 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fish Weight Calculator</title>
+    <title>Weight Formulas - Fish Weight Estimator</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 p-4">
-    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-6">
-        <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Fish Weight Calculator</h1>
-        
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">General Formula</h2>
-            <div class="bg-gray-50 p-4 rounded-lg">
-                <p class="text-lg font-mono">Weight (lbs) = (Girth² × Length) / Factor</p>
-                <ul class="mt-2 text-gray-600">
-                    <li>• Girth: Circumference at widest point (inches)</li>
-                    <li>• Length: Total length (inches)</li>
-                    <li>• Factor: Species-specific constant</li>
-                </ul>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <nav class="bg-blue-600 text-white p-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold hover:text-blue-200 transition duration-300">Fish Weight Estimator</a>
+            <div class="space-x-6">
+                <a href="formulas.html" class="hover:text-blue-200 transition duration-300">Weight Formulas</a>
+                <a href="privacy-policy.html" class="hover:text-blue-200 transition duration-300">Privacy Policy</a>
             </div>
         </div>
+    </nav>
 
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Species-Specific Factors</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <header class="bg-blue-700 text-white py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl font-bold mb-4">Fish Weight Calculation Formulas</h1>
+            <p class="text-blue-100">Accurate formulas for estimating fish weight</p>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-6">
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold mb-4 text-blue-800">General Formula</h2>
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <h3 class="font-semibold mb-2">Freshwater Species</h3>
-                    <ul class="space-y-1">
-                        <li>• Bass: 1200</li>
-                        <li>• Pike: 800</li>
-                        <li>• Trout: 800</li>
-                        <li>• Walleye: 900</li>
-                        <li>• Sunfish: 1200</li>
-                        <li>• Gar: 1050</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <h3 class="font-semibold mb-2">Saltwater Species</h3>
-                    <ul class="space-y-1">
-                        <li>• Salmon: 800</li>
-                        <li>• Redfish: 900</li>
-                        <li>• Snook: 800</li>
-                        <li>• Bluefish: 1200</li>
-                        <li>• Bonefish: 1100</li>
-                        <li>• Mackerel: 1300</li>
+                    <p class="text-lg font-mono">Weight (lbs) = (Girth² × Length) / Factor</p>
+                    <ul class="mt-2 text-gray-600">
+                        <li>• Girth: Circumference at widest point (inches)</li>
+                        <li>• Length: Total length (inches)</li>
+                        <li>• Factor: Species-specific constant</li>
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Important Notes</h2>
-            <div class="bg-yellow-50 p-4 rounded-lg">
-                <ul class="space-y-2 text-gray-700">
-                    <li>1. All measurements must be in inches</li>
-                    <li>2. Measure girth at the widest point of the fish</li>
-                    <li>3. Length should be total length (tip of snout to tip of tail)</li>
-                    <li>4. Results are estimates; actual weights may vary</li>
-                    <li>5. Formulas assume average fish condition</li>
-                </ul>
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold mb-4 text-blue-800">Species-Specific Factors</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2 text-blue-700">Freshwater Species</h3>
+                        <ul class="space-y-1">
+                            <li>• Bass: 1200</li>
+                            <li>• Pike: 800</li>
+                            <li>• Trout: 800</li>
+                            <li>• Walleye: 900</li>
+                            <li>• Sunfish: 1200</li>
+                            <li>• Gar: 1050</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2 text-blue-700">Saltwater Species</h3>
+                        <ul class="space-y-1">
+                            <li>• Salmon: 800</li>
+                            <li>• Redfish: 900</li>
+                            <li>• Snook: 800</li>
+                            <li>• Bluefish: 1200</li>
+                            <li>• Bonefish: 1100</li>
+                            <li>• Mackerel: 1300</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold mb-4 text-blue-800">Important Notes</h2>
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <ul class="space-y-2 text-gray-700">
+                        <li>1. All measurements must be in inches</li>
+                        <li>2. Measure girth at the widest point of the fish</li>
+                        <li>3. Length should be total length (tip of snout to tip of tail)</li>
+                        <li>4. Results are estimates; actual weights may vary</li>
+                        <li>5. Formulas assume average fish condition</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-sm text-gray-600 mt-6 border-t pt-4">
+                <h3 class="font-semibold mb-2 text-blue-800">Official Resources:</h3>
+                <div class="space-y-4">
+                    <div>
+                        <p class="font-semibold text-blue-700">Florida Fish and Wildlife Conservation Commission (FWC):</p>
+                        <ul class="ml-4 space-y-1">
+                            <li>• <a href="https://myfwc.com/fishing/freshwater/fishing-tips/bass-weight-calculator/" class="text-blue-600 hover:text-blue-800 underline">Bass Weight Calculator</a></li>
+                            <li>• <a href="https://myfwc.com/fishing/saltwater/recreational/measurement/" class="text-blue-600 hover:text-blue-800 underline">Fish Measurement Guide</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-blue-700">Other Resources:</p>
+                        <ul class="ml-4 space-y-1">
+                            <li>• <a href="https://www.dnr.state.mn.us/fish/measurement.html" class="text-blue-600 hover:text-blue-800 underline">Minnesota DNR Guidelines</a></li>
+                            <li>• <a href="https://www.bonefishtarpontrust.org/research-data" class="text-blue-600 hover:text-blue-800 underline">Bonefish & Tarpon Trust Research</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+    </main>
 
-        <div class="text-sm text-gray-600 mt-6 border-t pt-4">
-            <h3 class="font-semibold mb-2">Official Resources:</h3>
-            <ul class="space-y-2">
-                <li>
-                    <span class="font-semibold">Florida Fish and Wildlife Conservation Commission (FWC):</span>
-                    <ul class="ml-4 space-y-1">
-                        <li>• <a href="https://myfwc.com/fishing/freshwater/fishing-tips/bass-weight-calculator/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 underline">Bass Weight Calculator</a></li>
-                        <li>• <a href="https://myfwc.com/fishing/saltwater/recreational/measurement/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 underline">Fish Measurement Guide</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="font-semibold">Texas Parks and Wildlife Department (TPWD):</span>
-                    <ul class="ml-4 space-y-1">
-                        <li>• <a href="https://tpwd.texas.gov/fishboat/fish/recreational/catchrelease/bass_length_weight.phtml" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 underline">Bass Length-Weight Relationships</a></li>
-                        <li>• <a href="https://txmarspecies.tamug.edu/length-weight.cfm" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 underline">Length-Weight Conversion Tools</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="font-semibold">Minnesota DNR:</span>
-                    <ul class="ml-4">
-                        <li>• <a href="https://www.dnr.state.mn.us/fish/measurement.html" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 underline">Fish Measurement Guidelines</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="font-semibold">Bonefish & Tarpon Trust (BTT):</span>
-                    <ul class="ml-4">
-                        <li>• <a href="https://www.bonefishtarpontrust.org/research-data" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 underline">Research & Data</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <footer class="bg-blue-800 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <p>&copy; 2025 Fish Weight Estimator App. All Rights Reserved.</p>
+            </div>
         </div>
-
-        <div class="mt-6 text-xs text-gray-500">
-            Last Updated: February 2025 - All links verified and current
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
