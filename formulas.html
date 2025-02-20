@@ -8,37 +8,37 @@
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
     <nav class="bg-blue-600 text-white p-4 sticky top-0 z-50 shadow-md">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold hover:text-blue-200 transition duration-300">Fish Weight Estimator</a>
-            <div class="space-x-6">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <a href="index.html" class="text-xl font-bold hover:text-blue-200 transition duration-300 mb-2 sm:mb-0">Fish Weight Estimator</a>
+            <div class="space-x-4 sm:space-x-6">
                 <a href="formulas.html" class="hover:text-blue-200 transition duration-300">Weight Formulas</a>
                 <a href="privacy-policy.html" class="hover:text-blue-200 transition duration-300">Privacy Policy</a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-blue-700 text-white py-12 px-4">
+    <header class="bg-blue-700 text-white py-8 sm:py-12 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-3xl font-bold mb-4">Fish Weight Calculation Formulas</h1>
-            <p class="text-blue-100">Weight estimation formulas based on empirical data and research</p>
+            <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Fish Weight Calculation Formulas</h1>
+            <p class="text-blue-100 text-sm sm:text-base">Weight estimation formulas based on empirical data and research</p>
         </div>
     </header>
 
-    <main class="flex-grow container mx-auto px-4 py-8">
-        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-6">
-            <div class="mb-8">
-                <h2 class="text-xl font-semibold mb-4 text-blue-800">About These Formulas</h2>
-                <div class="bg-blue-50 p-4 rounded-lg mb-6">
-                    <p class="text-gray-700">These formulas have been developed through extensive empirical data and research. While they typically provide good results, please note that they are estimates and actual weights may vary depending on various factors including the fish's condition and season.</p>
+    <main class="flex-grow container mx-auto px-4 py-6 sm:py-8">
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-4 sm:p-6">
+            <div class="mb-6 sm:mb-8">
+                <h2 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">About These Formulas</h2>
+                <div class="bg-blue-50 p-3 sm:p-4 rounded-lg mb-6">
+                    <p class="text-gray-700 text-sm sm:text-base">These formulas have been developed through extensive empirical data and research. While they typically provide good results, please note that they are estimates and actual weights may vary depending on various factors including the fish's condition and season.</p>
                 </div>
 
-                <h2 class="text-xl font-semibold mb-4 text-blue-800">Formula Types</h2>
+                <h2 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Formula Types</h2>
                 <div class="space-y-4">
-                    <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
                         <h3 class="font-semibold text-blue-700 mb-2">Length × Girth² Formula</h3>
-                        <p class="font-mono">Weight = (Length × Girth × Girth) / Factor</p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
-                            <ul class="space-y-1">
+                        <p class="font-mono text-sm sm:text-base">Weight = (Length × Girth × Girth) / Factor</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
+                            <ul class="space-y-1 text-sm sm:text-base">
                                 <li>• Trout (750)</li>
                                 <li>• Walleye (750)</li>
                                 <li>• Pike (900)</li>
@@ -46,7 +46,7 @@
                                 <li>• Carp (800)</li>
                                 <li>• Bluegill (1,200)</li>
                             </ul>
-                            <ul class="space-y-1">
+                            <ul class="space-y-1 text-sm sm:text-base">
                                 <li>• Bonefish (900)</li>
                                 <li>• Snook (900)</li>
                                 <li>• Redfish (900)</li>
@@ -57,18 +57,18 @@
                         </div>
                     </div>
 
-                    <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
                         <h3 class="font-semibold text-blue-700 mb-2">Length² × Girth Formula</h3>
-                        <p class="font-mono">Weight = (Length × Length × Girth) / Factor</p>
-                        <ul class="space-y-1 mt-3">
+                        <p class="font-mono text-sm sm:text-base">Weight = (Length × Length × Girth) / Factor</p>
+                        <ul class="space-y-1 mt-3 text-sm sm:text-base">
                             <li>• Bass (1,200)</li>
                         </ul>
                     </div>
 
-                    <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
                         <h3 class="font-semibold text-blue-700 mb-2">Length³ Formula</h3>
-                        <p class="font-mono">Weight = (Length × Length × Length) / Factor</p>
-                        <ul class="space-y-1 mt-3">
+                        <p class="font-mono text-sm sm:text-base">Weight = (Length × Length × Length) / Factor</p>
+                        <ul class="space-y-1 mt-3 text-sm sm:text-base">
                             <li>• Sunfish (1,200)</li>
                             <li>• Gar (2,700)</li>
                             <li>• Crappie (1,600)</li>
@@ -79,10 +79,10 @@
                 </div>
             </div>
 
-            <div class="mb-8">
-                <h2 class="text-xl font-semibold mb-4 text-blue-800">Important Notes</h2>
-                <div class="bg-yellow-50 p-4 rounded-lg">
-                    <ul class="space-y-2 text-gray-700">
+            <div class="mb-6 sm:mb-8">
+                <h2 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-800">Important Notes</h2>
+                <div class="bg-yellow-50 p-3 sm:p-4 rounded-lg">
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-700">
                         <li>1. All measurements must be in inches. The app will convert from cm to inches if cm is selected.</li>
                         <li>2. Measure girth at the widest point of the fish</li>
                         <li>3. Length should be total length (tip of snout to tip of tail)</li>
@@ -91,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="text-sm text-gray-600 mt-6 border-t pt-4">
+            <div class="text-xs sm:text-sm text-gray-600 mt-6 border-t pt-4">
                 <h3 class="font-semibold mb-2 text-blue-800">References & Resources:</h3>
                 <ul class="space-y-2">
                     <li>• <a href="https://norrik.com/fish-length-weight-size-chart/" class="text-blue-600 hover:text-blue-800 underline">Norrik Fish Length-Weight Size Chart</a></li>
@@ -104,9 +104,9 @@
         </div>
     </main>
 
-    <footer class="bg-blue-800 text-white py-8 mt-12">
+    <footer class="bg-blue-800 text-white py-6 sm:py-8 mt-8 sm:mt-12">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center">
+            <div class="text-center text-sm sm:text-base">
                 <p>&copy; 2025 Fish Weight Estimator App. All Rights Reserved.</p>
             </div>
         </div>
